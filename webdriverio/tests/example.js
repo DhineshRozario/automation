@@ -29,10 +29,11 @@ describe ('First Steps with WebdriverIO', () => {
 
     it ('Get Element Text', ()=> {
         const text = $('h1').getText()
+        console.log('h1 Text: ' + text)
         const element = $('h1')
         element.waitForExist()
 
-        expect(element).toHaveText('Example Domain FAIL')
+        expect(element).toHaveText('Example Domain')
     })
 
     // it ('', ()=> {
