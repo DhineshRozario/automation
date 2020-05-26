@@ -27,9 +27,13 @@ describe ('First Steps with WebdriverIO', () => {
         expect(link).toHaveLink('https://www.iana.org/domains/example')
     })
 
-    // it ('', ()=> {
-        
-    // })
+    it ('Get Element Text', ()=> {
+        const text = $('h1').getText()
+        const element = $('h1')
+        element.waitForExist()
+
+        expect(element).toHaveText('Example Domain FAIL')
+    })
 
     // it ('', ()=> {
         
