@@ -1,0 +1,33 @@
+{
+  "name": "webdriveriotesting",
+  "version": "1.0.0",
+  "description": "Automated Software Testing using WebdriverIO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DhineshRozario/automation.git"
+  },
+  "keywords": [
+    "Automation",
+    "Selenium",
+    "WebdriverIO"
+  ],
+  "author": "DhineshRozario",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DhineshRozario/automation/issues"
+  },
+  "homepage": "https://github.com/DhineshRozario/automation#readme",
+  "devDependencies": {
+    "@wdio/cli": "^6.1.12",
+    "@wdio/local-runner": "^6.1.12",
+    "@wdio/mocha-framework": "^6.1.8",
+    "@wdio/spec-reporter": "^6.1.12",
+    "@wdio/sync": "^6.1.8",
+    "chromedriver": "^83.0.0",
+    "wdio-chromedriver-service": "^6.0.3"
+  }
+}
