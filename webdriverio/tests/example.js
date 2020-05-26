@@ -7,13 +7,26 @@ describe ('First Steps with WebdriverIO', () => {
         expect(browser).toHaveTitle('Example Domain')
     })
 
-    // it ('Load WebdriverIO Website', ()=> {
-    //     browser.url('https://webdriver.io')
-    //     browser.pause(3000)
+    it ('H1 should be visible', ()=> {
+        // Get selector and save it to variable
+        const h1 = $('h1')
+        expect(h1).toBeVisible()
+    })
+    
+    it ('p tag should be visible', ()=> {
+        // Get selector and save it to variable
+        const pTag = $('p')
+        expect(pTag).toBeVisible()
+    })
+
+    // it ('', ()=> {
+        
     // })
-    
-    
-    
+
+    // it ('', ()=> {
+        
+    // })
+
     // it ('', ()=> {
         
     // })
