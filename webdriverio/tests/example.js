@@ -4,12 +4,13 @@ describe ('First Steps with WebdriverIO', () => {
         browser.pause(2000)
 
         expect(browser).toHaveUrl('http://www.example.com/')
+        expect(browser).toHaveTitle('Example Domain')
     })
 
-    it ('Load WebdriverIO Website', ()=> {
-        browser.url('https://webdriver.io')
-        browser.pause(3000)
-    })
+    // it ('Load WebdriverIO Website', ()=> {
+    //     browser.url('https://webdriver.io')
+    //     browser.pause(3000)
+    // })
     
     
     
