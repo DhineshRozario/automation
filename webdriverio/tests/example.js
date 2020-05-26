@@ -36,6 +36,22 @@ describe ('First Steps with WebdriverIO', () => {
         expect(element).toHaveText('Example Domain')
     })
 
+    it ('Assert Attribute', ()=> {
+        browser.url('https://devexpress.github.io/testcafe/example/')
+        const button = $('#submit-button')
+        button.waitForExist()
+        expect(button).toHaveAttrContaining('type', 'submit')
+        
+    })
+
+    // it ('', ()=> {
+        
+    // })
+
+    // it ('', ()=> {
+        
+    // })
+
     // it ('', ()=> {
         
     // })
