@@ -19,9 +19,10 @@ describe ('First Steps with WebdriverIO', () => {
         expect(pTag).toBeVisible()
     })
 
-    // it ('', ()=> {
-        
-    // })
+    it ('Check Link Value', ()=> {
+        const link = $('a')
+        expect(link).toHaveLink('https://www.iana.org/domains/example')
+    })
 
     // it ('', ()=> {
         
