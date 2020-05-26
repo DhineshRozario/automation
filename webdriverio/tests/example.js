@@ -41,12 +41,15 @@ describe ('First Steps with WebdriverIO', () => {
         const button = $('#submit-button')
         button.waitForExist()
         expect(button).toHaveAttrContaining('type', 'submit')
-        
+
     })
 
-    // it ('', ()=> {
-        
-    // })
+    it ('Assert Attribute Value', ()=> {
+        const button = $('#populate')
+        button.waitForExist()
+
+        expect(button).toHaveValue('Populate')
+    })
 
     // it ('', ()=> {
         
